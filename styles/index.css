@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-items {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header h1 a, header h1 a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main-first, .main-second {
+    display: flex;
+}
+
+.main-item {
+    background-color: rgb(235, 235, 235);
+    font-size: large;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-item a {
+    color: black;
+    text-decoration: none;
+    padding: 50px;
+}
+
+.main-item p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1850px) {
+    main {
+        justify-content: baseline;
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+  
+@media screen and (max-width: 1000px) {
+    html {
+        background-color: white;
+        width: 100%;
+    }
+
+    main, .header-items {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
